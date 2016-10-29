@@ -22,5 +22,5 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080);
-console.log('meet-irl is running on 8080');
+app.listen(80);
+console.log('meet-irl is running on 80');
