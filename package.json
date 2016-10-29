@@ -26,6 +26,6 @@
     "karma-spec-reporter": "0.0.26"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --single-run"
   }
 }
