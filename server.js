@@ -22,5 +22,10 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080, '0.0.0.0');
-console.log('meet-irl is running on 8080');
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
+app.listen(port, function() {
+    console.log('meet-irl is running on ' + port);
+});
